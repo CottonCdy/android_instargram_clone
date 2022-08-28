@@ -5,7 +5,10 @@
       <map>
         <entry key="..\:/Users/ujjsi/AndroidStudioProjects/InstargramClone/app/src/main/res/drawable/instar_input_bg.xml" value="0.556923076923077" />
         <entry key="..\:/Users/ujjsi/AndroidStudioProjects/InstargramClone/app/src/main/res/drawable/instar_login_button.xml" value="0.5546296296296296" />
-        <entry key="..\:/Users/ujjsi/AndroidStudioProjects/InstargramClone/app/src/main/res/layout/activity_main.xml" value="0.5" />
+        <entry key="..\:/Users/ujjsi/AndroidStudioProjects/InstargramClone/app/src/main/res/layout/activity_instar_join.xml" value="0.32083333333333336" />
+        <entry key="..\:/Users/ujjsi/AndroidStudioProjects/InstargramClone/app/src/main/res/layout/activity_instar_login.xml" value="0.32083333333333336" />
+        <entry key="..\:/Users/ujjsi/AndroidStudioProjects/InstargramClone/app/src/main/res/layout/activity_instar_splash.xml" value="0.5494791666666666" />
+        <entry key="..\:/Users/ujjsi/AndroidStudioProjects/InstargramClone/app/src/main/res/layout/activity_main.xml" value="0.33" />
       </map>
     </option>
   </component>
