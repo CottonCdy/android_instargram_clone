@@ -83,7 +83,11 @@ class InstarJoinActivity : AppCompatActivity() {
                 }
 
                 override fun onFailure(call: Call<UserToken>, t: Throwable) {
-
+                    Toast.makeText(
+                        this@InstarJoinActivity,
+                        "Error",
+                        Toast.LENGTH_SHORT
+                    ).show()
                 }
             })
         }
