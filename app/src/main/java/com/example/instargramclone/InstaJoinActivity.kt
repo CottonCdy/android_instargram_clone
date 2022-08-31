@@ -5,7 +5,6 @@ import android.content.Intent
 import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
@@ -16,7 +15,7 @@ import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
-class InstarJoinActivity : AppCompatActivity() {
+class InstaJoinActivity : AppCompatActivity() {
 
     var userName: String = ""
     var userPassword1: String = ""
@@ -24,11 +23,11 @@ class InstarJoinActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_instar_join)
+        setContentView(R.layout.activity_insta_join)
 
         // 로그인 버튼
         findViewById<TextView>(R.id.instar_login).setOnClickListener {
-            startActivity(Intent(this, InstarLoginActivity::class.java))
+            startActivity(Intent(this, InstaLoginActivity::class.java))
         }
 
         // id 입력
@@ -50,7 +49,7 @@ class InstarJoinActivity : AppCompatActivity() {
         findViewById<TextView>(R.id.join_btn).setOnClickListener {
             // 비밀번호가 일치하지 않을 경우
             if (!(userPassword1.equals(userPassword2))) {
-                Toast.makeText(this@InstarJoinActivity, "비밀번호가 동일하지 않습니다", Toast.LENGTH_SHORT)
+                Toast.makeText(this@InstaJoinActivity, "비밀번호가 동일하지 않습니다", Toast.LENGTH_SHORT)
                     .show()
                 return@setOnClickListener
             }
@@ -60,14 +59,14 @@ class InstarJoinActivity : AppCompatActivity() {
             user.put("password1", userPassword1)
             user.put("password2", userPassword2)
 
-            retrofitService.instarJoin(user).enqueue(object : Callback<UserToken> {
-                override fun onResponse(call: Call<UserToken>, response: Response<UserToken>) {
+            retrofitService.instaJoin(user).enqueue(object : Callback<User> {
+                override fun onResponse(call: Call<User>, response: Response<User>) {
                     if (response.isSuccessful) {
-                        val userToken = response.body()!!
-                        if (userToken.token == null) {
+                        val user = response.body()!!
+                        if (user.token == null) {
                             // 아이디가 이미 존재하는 경우
                             Toast.makeText(
-                                this@InstarJoinActivity,
+                                this@InstaJoinActivity,
                                 "아이디가 이미 존재합니다",
                                 Toast.LENGTH_SHORT
                             ).show()
@@ -77,14 +76,15 @@ class InstarJoinActivity : AppCompatActivity() {
                         val sharedPreferences =
                             getSharedPreferences("user_info", Context.MODE_PRIVATE)
                         val editor: SharedPreferences.Editor = sharedPreferences.edit()
-                        editor.putString("token", userToken.token)
+                        editor.putString("token", user.token)
+                        editor.putString("user_id", user.id.toString())
                         editor.commit()
                     }
                 }
 
-                override fun onFailure(call: Call<UserToken>, t: Throwable) {
+                override fun onFailure(call: Call<User>, t: Throwable) {
                     Toast.makeText(
-                        this@InstarJoinActivity,
+                        this@InstaJoinActivity,
                         "Error",
                         Toast.LENGTH_SHORT
                     ).show()

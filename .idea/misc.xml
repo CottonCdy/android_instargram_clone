@@ -3,6 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/JS/AndroidStudioProjects/android_instargram_clone/app/src/main/res/layout/activity_insta_change_profile.xml" value="0.264" />
+        <entry key="..\:/Users/JS/AndroidStudioProjects/android_instargram_clone/app/src/main/res/layout/activity_insta_main.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/JS/AndroidStudioProjects/android_instargram_clone/app/src/main/res/layout/activity_instar_main.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/JS/AndroidStudioProjects/android_instargram_clone/app/src/main/res/layout/insta_post_fragment.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/JS/AndroidStudioProjects/android_instargram_clone/app/src/main/res/layout/insta_profile_fragment.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/JS/AndroidStudioProjects/android_instargram_clone/app/src/main/res/layout/instar_feed_fragment.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/JS/AndroidStudioProjects/android_instargram_clone/app/src/main/res/layout/instar_post_fragment.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/JS/AndroidStudioProjects/android_instargram_clone/app/src/main/res/layout/instar_profile_fragment.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/JS/AndroidStudioProjects/android_instargram_clone/app/src/main/res/layout/post_item.xml" value="0.25364583333333335" />
         <entry key="..\:/Users/ujjsi/AndroidStudioProjects/InstargramClone/app/src/main/res/drawable/instar_input_bg.xml" value="0.556923076923077" />
         <entry key="..\:/Users/ujjsi/AndroidStudioProjects/InstargramClone/app/src/main/res/drawable/instar_login_button.xml" value="0.5546296296296296" />
         <entry key="..\:/Users/ujjsi/AndroidStudioProjects/InstargramClone/app/src/main/res/layout/activity_instar_join.xml" value="0.32083333333333336" />

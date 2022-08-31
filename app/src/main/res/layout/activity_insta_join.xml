@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:gravity="center_horizontal"
     android:orientation="vertical"
-    tools:context=".InstarLoginActivity">
+    tools:context=".InstaLoginActivity">
 
     <ImageView
         android:layout_width="196dp"
@@ -33,9 +33,10 @@
             android:textSize="18dp" />
 
         <EditText
-            android:id="@+id/pw_input"
+            android:id="@+id/pw_input1"
             android:layout_width="356dp"
             android:layout_height="62dp"
+            android:layout_marginBottom="10dp"
             android:background="@drawable/instar_input_bg"
             android:hint="비밀번호"
             android:inputType="textPassword"
@@ -43,42 +44,37 @@
             android:textColorHint="#FF707070"
             android:textSize="18dp" />
 
-    </androidx.appcompat.widget.LinearLayoutCompat>
-
-    <androidx.appcompat.widget.LinearLayoutCompat
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:gravity="center_horizontal"
-        android:orientation="horizontal">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="10dp"
-            android:text="계정이 없으신가요?"
-            android:textColor="#1d1d1d"
+        <EditText
+            android:id="@+id/pw_input2"
+            android:layout_width="356dp"
+            android:layout_height="62dp"
+            android:background="@drawable/instar_input_bg"
+            android:hint="비밀번호 확인"
+            android:inputType="textPassword"
+            android:paddingLeft="27dp"
+            android:textColorHint="#FF707070"
             android:textSize="18dp" />
-
-        <TextView
-            android:id="@+id/instar_join"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="가입하기"
-            android:textColor="#1868e8"
-            android:textSize="18dp"
-            android:textStyle="bold" />
 
     </androidx.appcompat.widget.LinearLayoutCompat>
 
     <TextView
-        android:id="@+id/login_btn"
+        android:id="@+id/instar_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="43dp"
+        android:text="로그인하기"
+        android:textColor="#1868e8"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/join_btn"
         android:layout_width="162dp"
         android:layout_height="58dp"
         android:layout_marginTop="50dp"
         android:background="@drawable/instar_login_button"
         android:gravity="center"
-        android:text="로그인"
+        android:text="가입"
         android:textColor="@color/white"
         android:textSize="20dp" />
 
